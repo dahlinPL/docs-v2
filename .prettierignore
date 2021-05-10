@@ -6,3 +6,7 @@ node_modules
 *.log
 /resources
 /content/influxdb/*/api/**
+
+**/*.json
+**/*.lock
+/content/influxdb/v1.*

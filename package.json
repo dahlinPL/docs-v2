@@ -1,11 +1,16 @@
 {
     "scripts": {
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "spellcheck": "npx cspell content/**/**.md"
     },
     "lint-staged": {
-        "*": "prettier --check --ignore-unknown"
+        "*": [
+            "npx prettier --check --ignore-unknown ",
+            "npx cspell content/**"
+        ]
     },
     "devDependencies": {
+        "cspell": "^5.4.0",
         "husky": "^6.0.0",
         "lint-staged": "^11.0.0",
         "prettier": "2.3.0"
