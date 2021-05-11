@@ -1,0 +1,14 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:jquery/slim",
+        "plugin:json/recommended"
+    ],
+    "env": {
+        "node": true
+    },
+    "plugins": ["html", "jquery", "json"],
+    "parserOptions": {
+      "ecmaVersion": 6
+      }
+}

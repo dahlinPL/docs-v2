@@ -1,0 +1,25 @@
+{
+    "scripts": {
+        "lint": "npx eslint . && npx prettier --check --ignore-unknown .",
+        "lint:fix": "npx eslint --fix . && npx prettier --write --ignore-unknown .",
+        "prepare": "husky install"
+    },
+    "lint-staged": {
+        "*.md": [
+            "prettier --parser markdown --write"
+        ],
+        "*.js": [
+            "prettier --write"
+        ]
+    },
+    "devDependencies": {
+        "eslint": "^7.26.0",
+        "eslint-plugin-html": "^6.1.2",
+        "eslint-plugin-jquery": "^1.5.1",
+        "eslint-plugin-json": "^3.0.0",
+        "eslint-plugin-markdown": "^2.1.0",
+        "husky": "^6.0.0",
+        "lint-staged": "^11.0.0",
+        "prettier": "2.3.0"
+    }
+}
